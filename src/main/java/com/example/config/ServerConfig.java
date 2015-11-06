@@ -16,6 +16,13 @@ import java.util.concurrent.TimeUnit;
 @Configuration
 public class ServerConfig {
 
+    /**
+     *  init the server here
+     * @param serverPort default to 8888
+     * @return
+     * @throws UnknownHostException
+     */
+
     @Bean
     public EmbeddedServletContainerFactory servletContainerFactory(
             @Value("${server.port:8888}") final Integer serverPort

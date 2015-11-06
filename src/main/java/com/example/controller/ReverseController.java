@@ -22,6 +22,11 @@ public class ReverseController {
     @Autowired
     JavaStringService javaStringService;
 
+    /**
+     * reverse your name
+     * @param name the name input
+     * @return     revered name
+     */
     @RequestMapping(value = "/reverse")
     public String hello(@RequestParam(value = "name", required = false, defaultValue = "gonynij")String name) {
         return scalaStringService.reverse(name) + " " + javaStringService.reverse(name);
