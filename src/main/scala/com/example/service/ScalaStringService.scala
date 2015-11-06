@@ -8,7 +8,5 @@ import org.springframework.stereotype.Service
   */
 @Service
 class ScalaStringService {
-  def reverse(s:String):String = {
-    s.reverse
-  }
+  def reverse(s:String) = s.reverse
 }
