@@ -4,7 +4,7 @@ This is a simple demo project for using springboot (spring mvc) with undertow an
 
 ## run
 
-    mvn springboot:run
+    mvn spring-boot:run
 
 ## package
 
