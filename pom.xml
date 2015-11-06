@@ -17,6 +17,7 @@
         <java.version>1.8</java.version>
         <springboot.version>1.2.7.RELEASE</springboot.version>
         <springframework.version>4.2.2.RELEASE</springframework.version>
+        <scala.version>2.11.7</scala.version>
     </properties>
 
     <dependencyManagement>
@@ -65,10 +66,11 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- scala library -->
         <dependency>
             <groupId>org.scala-lang</groupId>
             <artifactId>scala-library</artifactId>
-            <version>2.11.7</version>
+            <version>${scala.version}</version>
         </dependency>
     </dependencies>
 
