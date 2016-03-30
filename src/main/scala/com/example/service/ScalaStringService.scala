@@ -9,4 +9,15 @@ import org.springframework.stereotype.Service
 @Service
 class ScalaStringService {
   def reverse(s:String) = s.reverse
+
+  def test():Unit = {
+    println("Hello world!")
+  }
+}
+
+object ScalaStringService {
+  def main(args: Array[String]): Unit = {
+    println("Hello world")
+  }
+  def add(a:Int, b:Int) = a + b + 1
 }
