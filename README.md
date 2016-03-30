@@ -2,6 +2,11 @@
 
 This is a simple demo project for using springboot (spring mvc) with undertow and scala, see details in the pom.xml
 
+## Continuous compile scala code
+to compile you scala code continuously, type the below command in the terminal
+
+    mvn scala:cc 
+
 ## run
 
     mvn spring-boot:run
@@ -22,6 +27,3 @@ You can test in your browser with below routes:
 
 ## tips
 - If you are running with jrebel, you can modify code and see changes with out restart server
-
-- This project uses java8, you can modify it in the pom.xml properties <java.version>
-
