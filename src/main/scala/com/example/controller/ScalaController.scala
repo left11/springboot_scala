@@ -26,7 +26,7 @@ class ScalaController {
   def randomLong(@RequestParam(required = false, defaultValue = "1") seed: Long): Long = {
     val random = new Random(seed)
     print("hello world")
-    Math.abs(random.nextLong())
+    random.nextLong()
   }
 
   @RequestMapping(value = Array("/reverse"))
