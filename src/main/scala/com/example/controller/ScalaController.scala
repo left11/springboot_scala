@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.{RequestMapping, RequestParam, _}
 @RestController
 class ScalaController {
 
-  import ScalaStringService._
-
   @Autowired
   var scalaStringService: ScalaStringService = _
 
@@ -28,12 +26,16 @@ class ScalaController {
   def randomLong(@RequestParam(required = false, defaultValue = "1") seed: Long): Long = {
     val random = new Random(seed)
     print("hello world")
-    print(add(1, 2))
     Math.abs(random.nextLong())
   }
 
   @RequestMapping(value = Array("/reverse"))
   def reverse(@RequestParam(value = "name", required = false, defaultValue = "gonynij") name: String) = {
     scalaStringService.reverse(name)
+  }
+
+  @RequestMapping(value = Array("/coll"))
+  def coll() = {
+    Map[String, String]("Hello" -> "world")
   }
 }
